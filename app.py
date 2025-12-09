@@ -18,6 +18,7 @@ def visualize_selection_sort(arr):
             highlight[idx] = "sorted"
 
         if j is not None: # Highlight current and min only if j is not None
+            highlight[j] = "current"
             highlight[min_idx] = "min"
 
         visualization.append((array_state.copy(), highlight.copy()))
