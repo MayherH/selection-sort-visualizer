@@ -1,4 +1,7 @@
 # selection-sort-visualizer
+## simply press run on vsc to run it or use hugging face
+## HuggingFace link: (https://huggingface.co/spaces/MayherH/VisualizationOfSelectionSort/tree/main)
+## Author: Maher Hassan
 A visualizer of a selection sort algorithm
 
 I chose selection sort because to me it is the most visually easy to understand and most pleasing to the eyes (bubble sort is also good looking but I feel like its too simple).
