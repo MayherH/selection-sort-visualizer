@@ -1,4 +1,5 @@
 from sort import selection_sort
+from sort import bubble_sort
 import gradio as gr
 
 def visualize_selection_sort(arr):
@@ -97,6 +98,7 @@ with gr.Blocks() as demo:
         inputs=[arr_input, step_slider],
         outputs=visualization
     )
+
 
 if __name__ == "__main__":
     demo.launch()

@@ -12,4 +12,17 @@ def selection_sort(arr): # Standard selection sort algorithm, with snapshots for
         steps.append({"array": arr.copy(), "i": i, "j": None, "min_idx": min_idx}) # snapshot
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
         steps.append({"array": arr.copy(), "i": i, "j": None, "min_idx": min_idx}) # snapshot
-    return steps 
+    return steps
+
+def bubble_sort(arr):
+    steps = []
+    n = len(arr)
+    for i in range(n):
+        swap_count = 0
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swap_count += 1
+        if swap_count == 0:
+            return arr
+    return arr
